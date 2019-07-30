@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.1.40:31112
+functions:
+  first:
+    lang: python3-armhf
+    handler: ./first
+    image: first:latest
